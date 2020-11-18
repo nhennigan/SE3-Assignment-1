@@ -1,0 +1,13 @@
+name: SE3-Assignment-1_runCI
+type: runCI
+steps:
+  - IN: SE3-Assignment-1_ciRepo
+ jdk:
+  - oraclejdk8
+
+branches:
+  only:
+    - master
+
+build:
+  ci: mv build 

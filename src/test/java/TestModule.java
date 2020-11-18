@@ -4,6 +4,7 @@ import org.joda.time.DateTime;
 import org.junit.Test;
 import junit.framework.TestCase;
 public class TestModule extends TestCase {
+	
 	//create objects to test
 	private Module module1 = new Module("Programming 4", 1234);
 	private Student student1 = new Student("Niamh",22,new DateTime(),1234567);

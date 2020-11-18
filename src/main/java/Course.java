@@ -16,6 +16,7 @@ public class Course {
 		this.startDate = startDate;
 		this.endDate = endDate;
 	}
+	
 	//mutator methods
 	public void setName(String newName) { name = newName; }
 	public void setStartDate(DateTime newStartDate) { startDate = newStartDate; }
@@ -32,13 +33,10 @@ public class Course {
 
 	//accessor methods
 	public String getName() { return name; }
-	
-	
 	public DateTime getEndDate() { return endDate; }
-	
 	public ArrayList<Module> getModules() {return modules;}
-	
 
+	@Override
 	public String toString() {
 		return("Course name:" + name + "\n");
 	

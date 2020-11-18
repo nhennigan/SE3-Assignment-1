@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import org.joda.time.DateTime;
 
 public class Student {
+	
+	//declare variables
 	private String username;
 	private String name;
 	private int age;
@@ -9,6 +11,7 @@ public class Student {
 	private int id;
 	private ArrayList<String> modules = new ArrayList<String>();
 	private ArrayList<String> courses = new ArrayList<String>();
+
 	//constructor method	
 	public Student(String name, int age, DateTime dob, int id) {
 		this.name = name;

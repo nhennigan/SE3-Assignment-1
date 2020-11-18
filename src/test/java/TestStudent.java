@@ -9,6 +9,7 @@ public class TestStudent extends TestCase{
 	private Student student1 = new Student("Niamh",22,new DateTime(),1234567);
 	private ArrayList<String> courses = new ArrayList<String>(Arrays.asList("Engineering","Arts","Medicine"));
 	private ArrayList<String> modules = new ArrayList<String>(Arrays.asList("Programming 4","Digital Signals Processing","Software Engineering 3"));
+
 	@Test
 	public void testGetUsername() {
 		assertEquals("Niamh22",student1.getUsername());

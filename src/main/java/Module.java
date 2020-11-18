@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 public class Module {
+	
 	//declare varaibles
 	public String name;
 	public int id;
@@ -14,6 +15,7 @@ public class Module {
 	//Mutator methods
 	public void setName(String newName) {name = newName;}
 	public void setId(int newId) {id = newId;}
+	public void setCourses(String newCourse) {courses.add(newCourse);}
 	
 	//add newStudent to students ArrayList and update newStudents modules ArrayList
 	public void setStudents(Student newStudent) {
@@ -25,7 +27,6 @@ public class Module {
 			newStudent.setModules(name);
 		}
 	}
-	public void setCourses(String newCourse) {courses.add(newCourse);}
 	
 	//Accessor methods
 	public String getName() {return name;}

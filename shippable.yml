@@ -11,4 +11,6 @@ branches:
     - master
 
 build:
-  ci: mvn build 
+  ci: 
+    - mvn test
+    - mvn install

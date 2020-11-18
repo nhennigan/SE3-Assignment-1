@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 public class Module {
-
 	//declare varaibles
 	public String name;
 	public int id;
@@ -15,7 +14,7 @@ public class Module {
 	//Mutator methods
 	public void setName(String newName) {name = newName;}
 	public void setId(int newId) {id = newId;}
-
+	
 	//add newStudent to students ArrayList and update newStudents modules ArrayList
 	public void setStudents(Student newStudent) {
 		if (students.contains(newStudent)) {
@@ -27,7 +26,7 @@ public class Module {
 		}
 	}
 	public void setCourses(String newCourse) {courses.add(newCourse);}
-
+	
 	//Accessor methods
 	public String getName() {return name;}
 	public int getId() {return id;}
@@ -36,7 +35,6 @@ public class Module {
 
 	@Override
 	public String toString() {
-		return("Module name:" + name + ", Module ID:" + id + "\n");
+		return("\nModule name:" + name + ", Module ID:" + id);
 	}
 }
-			

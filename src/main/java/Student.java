@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import org.joda.time.DateTime;
+
 public class Student {
 	private String username;
 	private String name;
 	private int age;
-	
 	private DateTime dob;  
 	private int id;
 	private ArrayList<String> modules = new ArrayList<String>();
@@ -28,7 +28,7 @@ public class Student {
 	public void setAge(int newAge) { age = newAge;}
 	public void setDob(DateTime newDob) {dob = newDob;}
 	public void setId(int newId) {id = newId;}
-
+	
 	//checks for duplication and then adds newCourse to course ArrayList
 	public void setCourses(String newCourse) {
 		if(courses.contains(newCourse)) {
@@ -38,7 +38,7 @@ public class Student {
 		courses.add(newCourse);
 		}
 	}
-
+	
 	//checks for duplication and then adds newModule to module ArrayList
 	public void setModules(String newModule) {
 		if(modules.contains(newModule)) {
@@ -60,7 +60,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return("Name:"+ name + ", Username:" + username + ", ID:" + id +"\n");
+		return("\nName:"+ name + ", Username:" + username + ", ID:" + id );
 	}
 
 }

@@ -13,7 +13,7 @@ public class TestModule extends TestCase {
 	@Test
 	public void testToStringFunctionality() {
 		//Test expected against actual outcome
-		assertEquals("Module name:Programming 4, Module ID:1234\n",module1.toString());
+		assertEquals("\nModule name:Programming 4, Module ID:1234",module1.toString());
 	}
 	public void testAddStudentsToModule() {
 		//add students to test object module1
